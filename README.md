@@ -1,15 +1,13 @@
 <!-- Heading -->
 
-# KANZAKI SHRINE
+# 📣 KANZAKI SHRINE
 
 ---
 
 이 프로젝트는 돗토리현의 칸자키 신사를 메타버스 공간에서 체험할 수 있게 구현된 Unity3D 프로젝트입니다.
 해당 프로젝트에서 사용 중인 캐릭터는 임시 캐릭터로 XANA 플랫폼에 업로드 후 XANA의 캐릭터로 교체될 예정입니다.
 
-## Features
-
----
+## 📁 Features
 
 - ### **에마(소원 적기)**
 
@@ -22,3 +20,11 @@
 - ### **참배**
 
 상호작용 시 데이터베이스에서 해당 유저 코인 감소 후 애니메이션 재생. 애니메이션 종료 후 오미쿠지(길흉 뽑기) 진행.
+
+## ⚙ Contributors
+
+**이도경(dklee159)** - Team Leader
+- Padlet API를 통해 Padlet 게시판 불러오기 및 저장 기능 구현
+- AWS Lambda 함수를 작성하여 AWS RDS와 연동
+- AWS Gateway를 사용하여 REST API 배포 후 데이터베이스에 접근
+- 월드 내 기본 UI 개발
