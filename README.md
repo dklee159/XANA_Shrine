@@ -27,4 +27,4 @@
 - Padlet API를 통해 Padlet 게시판 불러오기 및 저장 기능 구현
 - AWS Lambda 함수를 작성하여 AWS RDS와 연동
 - AWS Gateway를 사용하여 REST API 배포 후 데이터베이스에 접근
-- 월드 내 기본 UI 개발
+- 월드 내 기본 UI 개발, 영어/일본어 로컬라이징 구현.
