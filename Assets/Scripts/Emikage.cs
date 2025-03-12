@@ -6,21 +6,21 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-    enum BoardChild
-    {
-        WriteBtn,
-        WrtieBoard,
-    }
-    enum WriteBoardChild
-{  
-        InputTitle,
-        InputContent,
-        CloseBtn,
-        PostBtn,
-        ColorSelectBtn,
-        ColorPanel,
-        CancelBtn
-    }
+enum BoardChild
+{
+    WriteBtn,
+    WrtieBoard,
+}
+enum WriteBoardChild
+{
+    InputTitle,
+    InputContent,
+    CloseBtn,
+    PostBtn,
+    ColorSelectBtn,
+    ColorPanel,
+    CancelBtn
+}
 public class Emikage : MonoBehaviour
 {
 
@@ -39,8 +39,8 @@ public class Emikage : MonoBehaviour
     TMP_InputField InputContent;
 
     [SerializeField] Color[] colors;
-    private string pdltUrl = "https://api.padlet.dev/v1/boards/pm18k4b03ik18lby";
-    private string api_Key = "pdltp_a442152fc8402d1207d54c7bc89c9b0542c3bc70207dc4ce825ef6f945755ef5bea535";
+    private string pdltUrl = "";
+    private string api_Key = "";
     void Awake()
     {
         boards = new List<EmikageBoardContent>(GridContent.transform.childCount);
@@ -69,7 +69,7 @@ public class Emikage : MonoBehaviour
         HandleImage.enabled = false;
 
 
-        for (int i = 0; i< GridContent.transform.childCount ; i++)
+        for (int i = 0; i < GridContent.transform.childCount; i++)
         {
             boards.Add(GridContent.transform.GetChild(i).GetComponent<EmikageBoardContent>());
         }
@@ -79,7 +79,8 @@ public class Emikage : MonoBehaviour
 
     }
 
-    private void cancelPost() {
+    private void cancelPost()
+    {
         writeBoard.SetActive(false);
         InputTitle.text = "";
         InputContent.text = "";
